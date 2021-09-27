@@ -1,7 +1,7 @@
 {
-  "name": "dt173g_moment3",
+  "name": "dt173g_moment4",
   "version": "1.0.0",
-  "description": "Moment 3 - Webbutveckling III DT174G",
+  "description": "Moment 4 - Webbutveckling III DT174G",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
