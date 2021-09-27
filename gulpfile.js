@@ -15,6 +15,7 @@ const terser = require('gulp-terser');                          // Skapa variabe
 const browserSync =require('browser-sync').create();            // Skapa variabel för att starta "live-server" 
 const sourceMaps = require('gulp-sourcemaps');                  // Skapar variabel för att kunna se sökväg till källkodsfilen (src inte pub)
 const sass = require('gulp-sass')(require('sass'));             // Skapa variabel för att hämta sass och gulp-sass för att generera/kompilera CSS samt automatisera konverteringen mellan SASS och CSS. 
+const babel = require('gulp-babel');                            // Skapa variabel för att transpilera/skapa bakåt-kompabilitet (js)
 
 const files = {
       // Skapa objekt som lagrar sökvägar
@@ -59,6 +60,9 @@ function taskJS(){
     return src(files.jsPath)                // gulp metoden src = vilka sökvägar och därmed filer ska hämtas?
     .pipe(sourceMaps.init())                // startar upp möjlighet att se källkodens ursprunglig plats (sökväg)
     .pipe(concat('main.js'))                // slår ihop alla js-filerna till en main.js fil 
+    .pipe(babel({                           // transpilerar/konvertera till äldre versioner av js
+        presets: ['@babel/env']
+    }))
     .pipe(terser())                         // minifierar alla js-filer
     .pipe(sourceMaps.write('../maps'))      // skriver källkodens ursprunglig plats (sökväg)
     .pipe(dest('pub/js'));                  // skicka vidare filerna till pub genom att använda metoden .pipe
