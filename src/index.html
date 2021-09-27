@@ -1,0 +1,94 @@
+<!-- Moment 4 i kursen DT173G Webbutveckling III -->
+<!-- Skapad av Frida Lazzari september 2021 -->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta name="description" content="DT173G - Webbutveckling III - Moment 3 - CSS processorer och SASS">
+    <meta name="keywords" content="">
+
+    <meta name="author" content="Frida Lazzari">
+    <title>Webbutveckling III | Moment 3</title>
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+
+    <!-- Link to google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.miun.se/utbildning/program/data-och-it/webbutveckling/om-programmet/">TWEUG</a>
+                </li>
+                <li><a href="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=22706">Webb III</a></li>
+                <li><a href="https://frla1901.github.io/dt173g_moment1/">Moment 1</a></li>
+                <li><a href="https://naughty-wiles-808fae.netlify.app">Moment 2</a></li>
+                <li><a href="https://distracted-lewin-c869e8.netlify.app/">Moment 3</a></li>
+
+                <!-- function in date.js -->
+                <p id="date" class="date"></p>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h1>Moment 3</h1>
+        <article class="wrapper">
+            <h2>CSS-preprocessorer och SASS </h2>
+            <p>CSS-preprocessorer är ett program som
+                genererar CSS-kod från en preproccesors
+                egna syntax. En preprocessor kommer med flera funktioner som inte existerar i vanlig CSS-kod.
+                Funktionalitet så som att använda variabler, återanvändbara funktioner, import av mindre delar(sk
+                "partials") och mycket mer.</p>
+            <br>
+            <br>
+            <p>Vilket gör att det går att göra koden
+                mycket mer strukturerad och lättare att underhålla vid större
+                projekt än vad det går att göra med ren CSS. Sass är en populär CSS-preprocessor och det finns två olika
+                syntaxer: Sass och SCSS.</p>
+        </article>
+
+        <article class="list-wrapper">
+            <h2>Moment i kursen Webb III</h2>
+            <ol>
+                <li>Versionshantering & Git</li>
+                <li>NodeJs och Gulp</li>
+                <li>CSS-preprocessorer och SASS</li>
+                <li>Ecmascript och Typescript</li>
+                <li>REST-webbtjänster med PHP</li>
+                <li>Projekt</li>
+            </ol>
+        </article>
+        <article class="img-wrapper">
+            <picture>
+                <img src="images/Git-Icon-Black.png" alt="Git logo" id="git">
+                <img src="images/gulp-2x.png" alt="Git logo" id="gulp">
+                <img src="images/Sass-Logo---Seal-(Color).png" alt="SASS logo" id="sass">
+                <img src="images/ts-logo-512.png" alt="Typescript logo" id="typescript">
+                <img src="images/rest.png" alt="Restfulapi logo" id="rest">
+            </picture>
+        </article>
+    </section>
+    <footer class="footer-wrapper">
+        <ul>
+            <li>Skapad av Frida Lazzari september 2021</li>
+            <br>
+            <li>Kontakta mig:</li>
+            <li><a href="mailto:frla1901@student.miun.se">frla1901@student.miun.se</a></li>
+            <!-- functionen in button.js file -->
+            <li><button onclick="buttonFunction()">Mitt gitHub Repo</button></li>
+        </ul>
+    </footer>
+    <!-- link to my js file -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
